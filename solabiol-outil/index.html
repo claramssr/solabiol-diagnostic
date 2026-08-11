@@ -22,11 +22,12 @@
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family: "DM Sans", sans-serif; background: var(--beige); color: var(--texte); min-height: 100vh; }
 
-  header { background: var(--vert); padding: 18px 32px; display: flex; align-items: center; gap: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.18); }
-  .logo-circle { width: 48px; height: 48px; background: var(--jaune); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: "Playfair Display", serif; font-weight: 900; font-size: 20px; color: var(--vert); flex-shrink: 0; }
+  header { background: #f6b633; padding: 18px 32px; display: flex; align-items: center; gap: 16px; box-shadow: 0 2px 20px rgba(0,0,0,0.18); }
+  .logo-img { height: 62px; width: auto; display: block; flex-shrink: 0; }
   .logo-text { font-family: "Playfair Display", serif; font-size: 22px; font-weight: 700; color: var(--blanc); }
   .logo-tagline { font-size: 12px; color: rgba(255,255,255,0.65); font-weight: 300; letter-spacing: 1px; text-transform: uppercase; }
-  .badge-bio { margin-left: auto; background: var(--jaune); color: var(--vert); font-size: 10px; font-weight: 600; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.8px; }
+  .badge-bio { margin-left: auto; flex-shrink: 0; }
+  .badge-bio img { height: 58px; width: auto; display: block; }
 
   main { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
 
@@ -153,18 +154,16 @@
     .options-grid.with-photos { grid-template-columns: 1fr 1fr; }
     .diag-summary { grid-template-columns: 1fr; }
     header { padding: 14px 16px; }
+    .logo-img { height: 44px; }
+    .badge-bio img { height: 40px; }
   }
 </style>
 </head>
 <body>
 
 <header>
-  <div class="logo-circle">S</div>
-  <div>
-    <div class="logo-text">Solabíol</div>
-    <div class="logo-tagline">Naturellement engagé</div>
-  </div>
-  <span class="badge-bio">🌿 Bio</span>
+  <img class="logo-img" src="https://www.seezon.co/wp-content/uploads/sites/2/2023/02/Solabiol-MASTER-LOGO-CMYK-2-min2-1-1.png" alt="Solabiol">
+  <span class="badge-bio"><img src="https://www.seezon.co/wp-content/uploads/sites/2/2023/12/UAB.png" alt="Agriculture Biologique"></span>
 </header>
 
 <main>
